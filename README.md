@@ -2,8 +2,10 @@
 
 ### Create a RingCentral app
 * Create an application at https://developer.ringcentral.com.
-* Select `Other Non-UI` option for the Platform type.
+* Select `3-legged OAuth flow authorization code` option for the Auth type.
 * Add the `ReadAccounts` and `ReadMessages` and `ReadCallLog` permissions for the app.
+* Choose the following option at the Security step
+  - This app is public and will be callable via any RingCentral customer
 * Copy the Client id and Client secret and add them to the `./environment/.env-sandbox` file as shown in the next section.
 * Generate a sandbox JWT token for the app. Copy the JWT token and add them to the `./environment/.env-sandbox` file as shown in the next section.
 
